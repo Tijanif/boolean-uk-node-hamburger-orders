@@ -4,7 +4,7 @@ const hamburgersRoute = express();
 
 // Database 🍔
 
-const hamburgerdb = [
+let hamburgerDB = [
   {
     id: 8,
     quantity: 4,
@@ -81,9 +81,15 @@ const hamburgerdb = [
 ];
 
 // Get burgers
-
 hamburgersRoute.get('/', (req, res) => {
-  res.json({ Hamburger: hamburgerdb });
+  res.json({ Hamburger: hamburgerDB });
+});
+
+// Post a new burger
+hamburgersRoute.post('/', (req, res) => {
+  const newBurger = req.body;
+  hamburgerDB = [...hamburgerDB, newBurger];
+  res.json({ newBuger: newBurger });
 });
 
 module.exports = hamburgersRoute;
