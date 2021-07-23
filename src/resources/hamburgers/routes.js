@@ -7,6 +7,7 @@ const hamburgersRoute = express();
 const hamburgerdb = [
   {
     id: 8,
+    quantity: 4,
     name: 'Vegetarian Burger',
     restaurant: 'Indian Burgers',
     web: 'https://www.cookwithmanali.com/vegetarian-burger-indian-style/',
@@ -23,6 +24,7 @@ const hamburgerdb = [
   },
   {
     id: 9,
+    quantity: 3,
     name: 'Fat Santa',
     restaurant: 'Sky City Hamilton',
     web: 'https://skycityhamilton.co.nz/eat-drink/eat-burger/',
@@ -39,6 +41,7 @@ const hamburgerdb = [
   },
   {
     id: 10,
+    quantity: 5,
     name: 'Blondie',
     restaurant: 'Yankys',
     web: 'http://yankyslambton.co.za/menu/',
@@ -57,6 +60,7 @@ const hamburgerdb = [
   },
   {
     id: 11,
+    quantity: 7,
     name: 'Monster Burger',
     restaurant: 'Yankys',
     web: 'http://yankyslambton.co.za/menu/',
